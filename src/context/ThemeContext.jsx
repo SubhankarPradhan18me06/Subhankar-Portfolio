@@ -7,7 +7,7 @@ const getInitialTheme = () => {
         const saved = localStorage.getItem('portfolio-theme');
         if (saved) return saved;
     }
-    return 'dark';
+    return 'light';
 };
 
 export const ThemeProvider = ({ children }) => {
