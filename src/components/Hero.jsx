@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { RESUME_DATA } from '../constants';
 import profilePhoto from '../assets/Subhankar Image.jpg';
+import resume from '../assets/Subhankar_Pradhan_resume.docx';
 
 const ROLES = ['Full Stack Developer', 'React.js Specialist', 'Node.js Engineer', 'API Architect'];
 
@@ -76,6 +77,9 @@ const Hero = () => {
                                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                             }}>
                                 Contact Me →
+                            </a>
+                            <a href={resume} download="Subhankar_Pradhan_Resume.docx" className="btn-secondary">
+                                📥 Download Resume
                             </a>
                         </div>
                     </div>

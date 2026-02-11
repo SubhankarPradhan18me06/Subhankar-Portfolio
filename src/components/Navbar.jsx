@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
+import resume from '../assets/Subhankar_Pradhan_resume.docx';
 
 const NAV_LINKS = [
     { label: 'About', to: '/about' },
@@ -60,6 +61,14 @@ const Navbar = () => {
                     >
                         Contact
                     </Link>
+                    <a
+                        href={resume}
+                        download="Subhankar_Pradhan_Resume.docx"
+                        className="navbar-resume"
+                        onClick={() => setMenuOpen(false)}
+                    >
+                        Resume ↓
+                    </a>
                     <button
                         className="theme-toggle"
                         onClick={toggleTheme}
